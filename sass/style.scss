@@ -1,0 +1,223 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "ubuntu", sans-serif;
+    width:100%;
+    p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20.68px;
+    }
+    h1{
+        font-weight:700;
+        font-size: 52px;
+        line-height: 59.75px;
+    }
+    h2{
+        margin-bottom:1em;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36.77px;
+    }
+    h3{
+        margin: 0.5em 0 0.7em 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20.68px;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 5em;
+    margin:0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.nav-item{
+    list-style-type: none;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 20.68px;
+    text-decoration: none;
+    padding: 5px 16px;
+    color: $dark;
+}
+
+//hover effect!!!!
+
+.container{
+    padding-top: 5em;
+    margin:0 1em;
+}
+
+.homepage-container{
+    .homepage-intro{
+        margin-top: 2.5em;
+        padding: 2em;
+    }
+    .homepage-image{
+        margin-top: 2em;
+    }
+}
+
+.button{
+    border: none;
+    border-radius: 18px;
+    padding:0.7em 4em;
+    margin-top: 25px;
+    background-color:$buttonColor;
+    font-size: 1.1em;
+    color: $light;
+    line-height: 20.68px;
+    a{
+        color:$light;
+        text-decoration: none;
+    }
+    :hover{
+        background-color: $buttonHover;
+    }
+}
+
+.about{
+    text-align: justify;
+    //box-shadow: -4px 4px #FFF5F5;
+    border-radius: 25px;
+    margin:0 auto;
+    padding: 1em 2em 0 ;
+}
+
+.about h2{
+    margin: 1em 2em;
+}
+
+.about-image img{
+    padding-top: 7em;
+}
+
+.box1, .box2, .box3, .box4{
+    text-align: justify;
+    padding:1em;
+    display: flex;
+}
+
+.box1{
+    background-color: #FFF5F5;
+}
+
+.box2{
+    background-color:#F5FFF5;
+}
+
+.box3{
+    background-color: #FFFEF5;
+}
+
+.box4{
+    background-color: #F5FCFF;
+}
+
+.grid-item img{
+    padding: 2em 2em 0;
+}
+
+footer{
+    .footer-nav{
+        ol{
+            list-style-type: none;
+            li{
+                a{
+                   text-decoration: none;
+                   color: $dark;
+                   :hover{
+                       color:$buttonColor;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width:992px) {
+
+    .homepage-container{
+        .homepage-intro{
+            padding: 7em 0 0 3em;
+        }
+        .homepage-image{
+            padding: 1em 1em 0 0;
+        }
+    }
+
+    .about-container{
+        margin-top: 2em;
+    }
+
+    .about{
+        margin-top: 6em;
+    }
+
+    .about-image{
+        margin-top: 2em;
+    }
+    
+    .what-to-expect{
+        justify-content: space-around;
+        margin-top: 9em;
+        background:linear-gradient(to right, #ED1C24, #F36F56);
+        height:60vh;
+        width:100vw;     
+    }
+
+    .wte-text{
+        padding-top:5em; 
+        margin-bottom: 1em;
+        color: #ffffff;
+        text-align: center;
+        height: 35vh;
+    }
+
+    .wte-flex{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: justify;
+        z-index: 1;
+    }
+
+    .flex{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: -4px 4px #FFF5F5;
+        width:30%;
+    }
+
+    #flex1, #flex3{
+        height:40vh;
+        position: relative;
+        padding: 1em;
+    }
+
+    #flex2{
+        height:50vh;
+        position: relative;
+        padding: 1em;
+    }
+
+  }
