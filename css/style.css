@@ -49,6 +49,10 @@ body h3 {
     padding: 1em 0;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
 .nav-items {
     display: flex;
     justify-content: flex-end;
@@ -121,25 +125,28 @@ button:hover {
 }
 
 
+.box1, .box2, .box3, .box4 {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+
+}
+
 
 .box1 {
     background-color: #FFF5F5;
-    padding: 2em;
 }
 
 .box2 {
     background-color: #F5FFF5;
-    padding: 2em;
 }
 
 .box3 {
     background-color: #FFFEF5;
-    padding: 2em;
 }
 
 .box4 {
     background-color: #F5FCFF;
-    padding: 2em;
 }
 
 .box-img {
@@ -310,7 +317,7 @@ footer {
         grid-gap: 0.4em;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        width: 90%;
+        width: 95%;
         height: 90vh;
         margin: auto;
         padding-top: 4em;
@@ -322,7 +329,7 @@ footer {
     .box3,
     .box4 {
         text-align: justify;
-        padding: 1em;
+        padding:1em  1em 4em 1em;
         display: flex;
     }
 
