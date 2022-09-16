@@ -42,20 +42,15 @@ body h3 {
 .navbar {
     top: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 10vh;
-    padding: 1em 0;
-}
-
-.navbar-toggler {
-    border: none;
+    padding: 1em;
 }
 
 .nav-items {
-    display: flex;
-    justify-content: flex-end;
+    right: 0;
 }
 
 nav ul li {
@@ -66,25 +61,10 @@ nav ul li {
     line-height: 20.68px;
 }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
 
-nav ul li a:hover {
-    color: #ED1C24;
-}
-
-.nav {
-    flex: 1 1 auto;
-}
-
-.logo {
-    flex: 4 1 auto;
-}
 
 .slogan {
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 .company-name {
@@ -113,7 +93,7 @@ button:hover {
 }
 
 .about-container {
-    padding: 8em 0;
+    padding: 6em 0;
 }
 
 
@@ -125,9 +105,12 @@ button:hover {
 }
 
 
-.box1, .box2, .box3, .box4 {
+.box1,
+.box2,
+.box3,
+.box4 {
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     border-radius: 10px;
 
 }
@@ -155,7 +138,7 @@ button:hover {
 
 .what-to-expect {
     justify-content: space-around;
-    margin-top: 9em;
+    margin: 9em auto 0;
     background: linear-gradient(to right, #ED1C24, #F36F56);
     height: 60vh;
     width: 100%;
@@ -169,35 +152,31 @@ button:hover {
     height: 35vh;
 }
 
-.wte-flex {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: justify;
-    z-index: 1;
-}
 
 .flex {
     background-color: white;
     border-radius: 10px;
     box-shadow: -4px 4px #FFF5F5;
-    width: 30%;
+    width: 90%;
 }
 
 #flex1,
 #flex3 {
-    height: 40vh;
-    position: relative;
+    height: 30vh;
+    /*position: relative;*/
     padding: 1em;
+    margin: 1em auto 0;
 }
 
 #flex2 {
-    height: 50vh;
-    position: relative;
+    height: 40vh;
+    /*position: relative;*/
     padding: 1em;
+    margin: 1em auto 0;
 }
 
 .testimonial-container {
-    margin-top: 13em;
+    margin-top: 12em;
     padding: 5em;
     height: 50vh;
     width: 100%;
@@ -207,15 +186,18 @@ button:hover {
     text-align: center;
 }
 
+
 .client-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: justify;
 }
 
+
 .client {
     background: linear-gradient(to right, #ED1C24, #F36F56);
-    width: 33%;
+    width: 80vw;
     border-radius: 10px;
     padding: 2em;
     margin: 2em 10px;
@@ -235,35 +217,27 @@ button:hover {
 }
 
 .map-container {
+    padding: 0 1em;
+}
+
+/*
+.map-container {
     width: 100%;
     display: flex;
-}
+}*/
 
-.map {
-    width: 60%;
-    padding-bottom: 2em;
-    margin-left: 3em;
-}
-
-.email {
-    width: 40%;
-    padding: 4em 4em 0 3em;
-    color: #ED1C24;
-    text-align: justify;
-}
-
-footer {
+.footer {
     display: flex;
     width: 100%;
 }
 
 .footer-logo {
-    width: 50%;
-    padding-left: 4em;
+    width: 40%;
+    padding-left: 1em;
 }
 
 .footer-nav {
-    width: 50%;
+    width: 60%;
 }
 
 .footer-nav ol {
@@ -275,8 +249,8 @@ footer {
     list-style-type: none;
     margin-top: 1em;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 20.68px;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .footer-nav ol li a {
@@ -298,9 +272,23 @@ footer {
 
 /*MEDIA QUERIES*/
 
+/*MOBILE*/
+
+@media only screen and (max-width: 600px) {
+    .testimonial-container {
+        margin: 30em 0 0 0;
+    }
+
+    .contact-container {
+        margin: 55em 0 0 0;
+    }
+}
+
+/*DESKTOP*/
+
 @media screen and (min-width: 700px) {
     .homepage-image {
-        padding-top: 6em;
+        padding-top: 3.5em;
     }
 
     .about-img {
@@ -314,7 +302,7 @@ footer {
     .services-container {
         display: grid;
         margin-top: 3em;
-        grid-gap: 0.4em;
+        grid-gap: 0.5em;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         width: 95%;
@@ -329,7 +317,7 @@ footer {
     .box3,
     .box4 {
         text-align: justify;
-        padding:1em  1em 4em 1em;
+        padding: 1em;
         display: flex;
     }
 
@@ -356,4 +344,52 @@ footer {
         grid-area: 4/2/6/3;
         background-color: #F5FCFF;
     }
+
+
+    .wte-flex {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: justify;
+        z-index: 1;
+    }
+
+    .flex {
+        width: 30%;
+    }
+
+    .client-container {
+        flex-wrap: nowrap;
+    }
+
+    .client {
+        width: 33%;
+    }
+
+    .map-container {
+        width: 100%;
+        display: flex;
+    }
+
+    .map {
+        width: 60%;
+        padding-bottom: 2em;
+        margin-left: 3em;
+    }
+    
+    .email {
+        width: 40%;
+        padding: 4em 4em 0 3em;
+        color: #ED1C24;
+        text-align: justify;
+    }
+
+    .contact-container {
+        margin: 15em 0 0 0;
+    }
+
+    /*.client-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}*/
 }
