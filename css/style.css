@@ -178,8 +178,7 @@ button:hover {
 .testimonial-container {
     margin-top: 12em;
     padding: 5em;
-    height: 50vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .text {
@@ -187,21 +186,14 @@ button:hover {
 }
 
 
-.client-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: justify;
-}
-
-
 .client {
     background: linear-gradient(to right, #ED1C24, #F36F56);
-    width: 80vw;
+    width: 85%;
     border-radius: 10px;
     padding: 2em;
     margin: 2em 10px;
     color: white;
+    border: 1px solid black;
 }
 
 .contact-container {
@@ -385,6 +377,12 @@ button:hover {
 
     .contact-container {
         margin: 15em 0 0 0;
+    }
+
+    .client-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: justify;
     }
 
     /*.client-container {
