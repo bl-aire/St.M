@@ -42,14 +42,67 @@ body h3 {
 
 
 
-.mdl-layout__header{
-    background-color: white !important;
-    box-shadow: none !important;
+#header{
+  box-shadow: none;
 }
 
+header{
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 0 3em 0;
+}
+
+.logo {
+  font-family: 'STIX Two Text', serif;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 90px;
+  color: #000000;
+
+}
+
+.mdl-layout__header-row{
+  background-color: #fff;
+}
+
+.logo2{
+  font-family: 'STIX Two Text', serif;
+}
+
+
 .mdl-navigation__link{
-    color: black !important;
-   
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#link1, #link2, #link3{
+  color: #000000;
+  font-size: 1.5em;
+}
+
+#drawer-link a, #drawer span{
+  color: #000000;
+  font-size: 1.3em;
+}
+
+
+#drawer span{
+  font-family: 'STIX Two Text', serif;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button i {
+  color: #000;
+  background-color: #fff;
+  height:100%;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.mdl-layout__content{
+  position: relative;
+  margin: 4em 0 0 0;
 }
 
 /*.nav-items {

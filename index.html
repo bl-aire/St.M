@@ -18,20 +18,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-
-
-    <!-- <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
-
-    -->
-
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>-->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -47,74 +36,88 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
 
 </head>
 
 <body class="_container">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+
+    <header>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <div class="mdl-layout__header" id="header">
+                <div class="mdl-layout__header-row">
+                    
+                    <span class="mdl-layout-title logo">
+                        <img src="images/_original_SaintMargrethenSystems-Inc 1.png" alt="Saint Margrethen logo" height="70px">
+                    </span>
+                    
+                    <div class="mdl-layout-spacer"></div>
+                    
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" id="link1" href="./index.html">Home</a>
+                        <a class="mdl-navigation__link" id="link2" href="./product.html">Marketplace</a>
+                        <a class="mdl-navigation__link" id="link3" href="./drop.html">Drop</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="mdl-layout__drawer mdl-layout--small-screen-only" id="drawer">
+                <span class="mdl-layout-title">Artsy</span>
+                <nav class="mdl-navigation" id="drawer-link">
+                    <a class="mdl-navigation__link" href="./index.html">Home</a>
+                    <a class="mdl-navigation__link" href="./product.html">Marketplace</a>
+                    <a class="mdl-navigation__link" href="./drop.html">Drop</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!--<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <div class="mdl-layout__header-row android-header mdl-layout__header mdl-layout__header--waterfall">
-            
-            
+
+
             <span class="android-title mdl-layout-title">
                 <img class="android-logo-image" src="images/_original_SaintMargrethenSystems-Inc 1.png" alt="logo">
             </span>
             <div class="android-header-spacer mdl-layout-spacer"></div>
-               
-               
-               
-               
-            
-                <div class="android-navigation-container">
-                    <nav class="android-navigation mdl-navigation">
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
-                    </nav>
-                </div>
 
-                
-                <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"
-                    id="more-button">
-                    <i class="material-icons">more_vert</i>
-                </button>
-                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-                    <li class="mdl-menu__item">5.0 Lollipop</li>
-                    <li class="mdl-menu__item">4.4 KitKat</li>
-                    <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-                    <li class="mdl-menu__item">Android History</li>
-                </ul>
+
+
+            <div class="android-navigation-container">
+                <nav class="android-navigation mdl-navigation">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+                </nav>
             </div>
+
+
+            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"
+                id="more-button">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+                <li class="mdl-menu__item">5.0 Lollipop</li>
+                <li class="mdl-menu__item">4.4 KitKat</li>
+                <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+                <li class="mdl-menu__item">Android History</li>
+            </ul>
         </div>
-
-
-
-
-
-
-
     </div>
 
-
-      
-
-
-
-
-
-
-
-
-
-
-               
-
+    </div>-->
 
     <main class="container">
         <div class="homepage-container row" id="homepage">
@@ -329,12 +332,8 @@
                 </div>
             </div>-->
     </footer>
-    <!--<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous">
-    </script>-->
 
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 
 </html>
