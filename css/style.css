@@ -138,6 +138,11 @@ button:hover {
     background-color: #ff6469;
 }
 
+button a:hover{
+  color: white;
+  text-decoration: none;
+}
+
 .about-container {
     padding: 6em 0;
 }
@@ -321,6 +326,10 @@ button:hover {
 
     .contact-container {
         margin: 10em 0 0 0;
+    }
+
+    .home-img{
+      margin: 6em 0 0 0;
     }
 }
 
