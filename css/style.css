@@ -325,11 +325,25 @@ button a:hover{
     }
 
     .contact-container {
-        margin: 10em 0 0 0;
+        margin: 10em 0 3em 0;
     }
 
     .home-img{
       margin: 6em 0 0 0;
+    }
+
+    .email{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 4em;
+    }
+
+    .mail{
+      width: 50%;
+    }
+
+    .location{
+      width: 50%;
     }
 }
 
@@ -457,7 +471,7 @@ button a:hover{
 
   
   
-  .s_up {
+  /*.s_up {
       transform: translateY(100px);
       animation: slideUp .8s ease forwards .5s;
   }
@@ -487,7 +501,7 @@ button a:hover{
     100% {
       transform: translateX(0px);
     }
-  }
+  }*/
   
 
 
