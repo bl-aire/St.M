@@ -105,22 +105,6 @@ header{
   margin: 4em 0 0 0;
 }
 
-/*.nav-items {
-    right: 0;
-    background-color: white;
-    z-index: 999;
-}
-
-nav ul li {
-    align-self: center;
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20.68px;
-}*/
-
-
-
 .slogan {
     margin: 2em 0 0 0;
 }
@@ -133,17 +117,21 @@ nav ul li {
 
 button {
     border: none;
-    border-radius: 12px;
-    padding: 0.7em 4em;
+    padding: 1.2em 5em;
     margin: 2em 0 4em 0;
     background-color: #ED1C24;
-    font-size: 18px;
-    line-height: 20.68px;
+    
+}
+
+.s_up{
+  border-radius: 15px;
 }
 
 button a {
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1em;
 }
 
 button:hover {
