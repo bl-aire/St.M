@@ -16,31 +16,29 @@ body {
 
 body p {
     font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.1em;
+    line-height: 1.2em;
 }
 
 body h1 {
     font-weight: 700;
-    font-size: 52px;
-    line-height: 59.75px;
+    font-size: 4em;
+    line-height: 1em;
 }
 
 body h2 {
     margin-bottom: 1em;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 36.77px;
+    font-size: 2em;
+    line-height: 1.2em;
 }
 
 body h3 {
     margin: 0.5em 0 0.7em 0;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 20.68px;
+    font-size: 2em;
+    line-height: 1.2em;
 }
-
-
 
 #header{
   box-shadow: none;
@@ -72,7 +70,7 @@ header{
 .mdl-navigation__link{
   font-family: 'Satoshi', sans-serif;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.3em;
 }
 
 #link1, #link2, #link3, #link4, #link5{
@@ -109,22 +107,15 @@ header{
     margin: 2em 0 0 0;
 }
 
-.company-name {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 36.77px;
-}
-
 button {
     border: none;
     padding: 1.2em 5em;
     margin: 2em 0 4em 0;
-    background-color: #ED1C24;
-    
+    background-color: #f61f26;
 }
 
 .s_up{
-  border-radius: 15px;
+  border-radius: 1em;
 }
 
 button a {
@@ -162,7 +153,7 @@ button a:hover{
 .box4 {
     padding: 1em;
     margin-bottom: 0.5em;
-    border-radius: 10px;
+    border-radius: 1em;
 
 }
 
@@ -288,8 +279,8 @@ button a:hover{
     list-style-type: none;
     margin-top: 1em;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 .footer-nav ol li a {
@@ -305,8 +296,8 @@ button a:hover{
 .footer-nav p {
     text-align: right;
     margin: 2em 3.7em 0 0;
-    font-size: 14px;
-    line-height: 16.09px;
+    font-size: 1.2em;
+    line-height: 1em;
 }
 
 /*MEDIA QUERIES*/
